@@ -1,0 +1,40 @@
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Login BET-APP</title>
+    <form action="../login" method="post">
+        <input type="text" name="username" id="username" required>
+        <input type="password" name="password" id="password" required>
+        <input type="submit">
+        <p>
+            <%= message %>
+        </p> -->
+
+        <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form action="../login" method="post">
+        <h1>Log in</h1>
+        <div class="inset">
+        <p>
+          <label for="email">Username</label>
+          <input type="text" name="username" id="username" required>
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+        </p>
+        
+        </div>
+        <p class="p-container">
+          <input type="submit" name="go" id="go" value="Log in">
+        </p>
+      </form>
+</body>
+</html>

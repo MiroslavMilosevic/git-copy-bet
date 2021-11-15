@@ -1,0 +1,225 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeStyle.css">
+    <title>Home Page</title>
+    <style>
+        .tekma-p{
+            padding: 0;
+            margin: 0;
+        }
+        .tekma-div-wrapper{
+background-color: rgba(0, 255, 255, 0.315);
+            margin: 2rem 0rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <p> Welcome   <%= username %> </p>
+
+<p><%= all_tekme_home.length %></p> 
+<p><%= all_tekme_home[0].length %></p> 
+<p><%= all_tekme_home[1].length %></p> 
+<p><%= all_tekme_home[0][0] %></p> 
+
+
+<% for(let i = 0; i < all_tekme_home[0].length;i++){ %> 
+
+<div class="tekma-div-wrapper">  
+    
+    <p class="tekma-p"> <%= all_tekme_home[0][i].tim1+"    vs    " +all_tekme_home[0][i].tim2 %> </p>
+    <p class="tekma-p"> <%= all_tekme_home[0][i].kvota %> </p>
+    <p class="tekma-p"> <%= all_tekme_home[0][i].liga %> </p>
+    <p class="tekma-p"> <%= all_tekme_home[0][i].game %> </p>
+    <p class="tekma-p"> <%= all_tekme_home[0][i].sport %> </p>
+
+
+</div>
+    
+
+    <% } %>
+</body>
+</html> -->
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <script>
+ 
+    
+      
+      </script>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="hamburger" onclick="menu()">
+            <span class="spanburger"></span>
+            <span class="spanburger"></span>
+            <span class="spanburger"></span>
+        </div>
+        <ul>
+            <li><a class = "logo" href="">ProTipster</a></li>
+
+            <li><a href="#about">About</a></li>
+            <hr>
+            <li><a href="#matches">Matches</a></li>
+            <hr>
+            <li><a href="#profit">Profit Margin</a></li>
+            <hr>
+        </ul>
+    </nav>
+       
+    <section id="about" class="about">
+
+       
+        <div class="about-text">
+            <h1>
+                Wellcome to <span class="color"> ProTipster    <span>
+            </h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptatibus et velit minus, autem
+            impedit aliquam laudantium hic veniam corrupti exercitationem. Alias corporis quam voluptatem quisquam
+            accusantium tenetur maiores? Eum odit ullam quam magni! Velit ut labore illum cum sint saepe atque at
+            consequuntur eaque officia quia nihil non, nemo in reprehenderit dolore, quidem sequi. Asperiores architecto
+            fugiat quasi cumque obcaecati doloribus dicta ipsa sapiente soluta necessitatibus deleniti omnis maxime
+            debitis cum deserunt, minus sit possimus itaque quae optio sed. Maxime quas nobis dolores error
+            reprehenderit, tempore animi ut adipisci iure similique voluptas optio corrupti tempora aut? Voluptates, at
+            alias? </div>
+
+    </section>
+    <section id="matches" class="matches">
+       
+          
+    <section class="dfdf">
+      <!--for demo wrap-->
+      <h1>Upcoming Matches</h1>
+      <div class="tbl-header">
+        <table  cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Team1</th>
+              <th>Team2</th>
+              <th>Odd</th>
+              <th>type-game</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+
+            <% for(let i = 0; i < all_tekme_home[0].length;i++){ %> 
+                <tr>
+                    <td> <%= all_tekme_home[0][i].tim1 %></td>
+                    <td> <%= all_tekme_home[0][i].tim2 %></td>
+                    <td><%= all_tekme_home[0][i].kvota %></td>
+                    <td><%= all_tekme_home[0][i].game %></td>
+                    <td onclick="more('<%= all_tekme_home[0][i]._id%>')">Read more...</td>
+                  </tr>
+                
+                    <% } %>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    </section>
+
+<section class="profit" id="profit" >
+
+
+    <section class="dfdf">
+        <!--for demo wrap-->
+        <h1>Profit margin</h1>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Team1</th>
+                <th>Team2</th>
+                <th>Odd</th>
+                <th>type-game</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+
+              <% 
+                all_tekme_home[1] = all_tekme_home[1].sort(function(a, b){return a.createdAt - b.createdAt});
+                %> 
+                  
+                <% for(let i = all_tekme_home[1].length-1; i >= 0;i--){
+                  
+                  if(all_tekme_home[1][i].dalijeproslo !== "neodluceno"){
+                    let proslo_class="";
+                     if(all_tekme_home[1][i].dalijeproslo == "proslo"){
+                         proslo_class="pass";
+                     }else{
+                        proslo_class="notpass";
+                     }
+                        %>
+                        <tr class="<%= proslo_class %>">
+                        <td> <%= all_tekme_home[1][i].removed_tim1 %></td>
+                        <td> <%= all_tekme_home[1][i].removed_tim2 %></td>
+                        <td><%= all_tekme_home[1][i].removed_game %></td>
+                        <td>+2.36%</td>
+                      </tr>
+                    
+                        <%     }} %>
+
+
+           
+             </tbody>
+          </table>
+        </div>
+      </section>
+
+
+
+</section>
+
+
+
+
+
+<script>
+function menu(){
+    document.getElementById("nav").classList.toggle('active');
+}
+
+function more(id){
+    console.log(`moreee:   ${id}`);
+    window.location.href = `/match?match_id=${id}`;
+}
+
+</script>
+</body>
+
+</html>
