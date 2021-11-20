@@ -31,6 +31,10 @@ stek:{
     type:Number,
     required:false
 },
+description:{
+    type:String,
+    required:false
+},
 dateToStart:{
     type:Date,
     required:false
