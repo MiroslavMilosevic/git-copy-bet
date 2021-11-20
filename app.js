@@ -82,6 +82,8 @@ app.get('/home', async (req, res) => {
   }
 });
 
+
+
 app.get('/admin', async (req, res) => {
   if (req.session.username == "pero1" && req.session.password == "pero@123") {
     let users = await getAllUsersMongoDB();
@@ -133,6 +135,16 @@ app.post('/delete/tekma', async (req, res) => {
     res.redirect("/login")
   }
 });
+
+///// units
+app.get('/units', (req, res)=>{
+  if (req.session.username != undefined && req.session.password != undefined) {
+    res.render("units");
+  }else{
+     res.redirect('/login');
+  }
+});
+
 /// one match
 app.get('/match', async (req, res) => {
 

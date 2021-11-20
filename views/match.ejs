@@ -35,10 +35,18 @@
             <br>
             <br>
             <p class="text">Description:</p>
-            <h1><%= tekma.description %></h1>
-   
+           
+            <%
             
+            if(tekma.description !== undefined){
+            %>
+            <p class="desc"><%= tekma.description %></p>
+            
+            <%}else{ %>
+                
+                <p class="desc">There is no description for this match</p>
 
+                <% } %>
             </div>
     </body>
     
