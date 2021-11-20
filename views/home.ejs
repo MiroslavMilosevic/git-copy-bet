@@ -91,20 +91,15 @@ background-color: rgba(0, 255, 255, 0.315);
     </nav>
        
     <section id="about" class="about">
-
-       
-        <div class="about-text">
+      
+      <div class="about-text">
             <h1>
                 Wellcome to <span class="color"> ProTipster    <span>
             </h1>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptatibus et velit minus, autem
-            impedit aliquam laudantium hic veniam corrupti exercitationem. Alias corporis quam voluptatem quisquam
-            accusantium tenetur maiores? Eum odit ullam quam magni! Velit ut labore illum cum sint saepe atque at
-            consequuntur eaque officia quia nihil non, nemo in reprehenderit dolore, quidem sequi. Asperiores architecto
-            fugiat quasi cumque obcaecati doloribus dicta ipsa sapiente soluta necessitatibus deleniti omnis maxime
-            debitis cum deserunt, minus sit possimus itaque quae optio sed. Maxime quas nobis dolores error
-            reprehenderit, tempore animi ut adipisci iure similique voluptas optio corrupti tempora aut? Voluptates, at
-            alias? </div>
+
+            Hello bro. Before you make any bets, be aware that betting is a type of dice. One can never know the exact outcome of any match. It can happen that Ronaldo did not have a nice breakfast, which no expert can know what Ronaldo ate for breakfast and thus can have a bad effect on the whole team. So please never enter more than you are willing to lose. What we can tell you for sure is that we buy tips from already very experienced tipsters who have shown great success so far. The most important thing for you to know is that we suggest you follow the 'stakes' that will be related to each match (1/10, 4/10, 9/10, etc.). You can read more about the stakes and how they work here. We advise you to read nicely and read how it works. For most of the upcoming matches, we will do our best to have an adequate analysis that you can read by clicking on the 'read more' button in the matches section of the table. We are not responsible for any loss, given that you accessed the site voluntarily. Remember, these are predictions, not sure bets. We are not interested in sure bets. We only suggest bets that you play voluntarily or you not play at all. Good luck!
+          
+          </div>
 
     </section>
     <section id="matches" class="matches">
@@ -121,7 +116,7 @@ background-color: rgba(0, 255, 255, 0.315);
               <th>Team1</th>
               <th>Team2</th>
               <th>Odd</th>
-              <th>type-game</th>
+              <th>Click Bellow</th>
             </tr>
           </thead>
         </table>
@@ -132,10 +127,10 @@ background-color: rgba(0, 255, 255, 0.315);
 
             <% for(let i = 0; i < all_tekme_home[0].length;i++){ %> 
                 <tr>
+                    <td> <%= all_tekme_home[0][i].dateToStart.toString().split("GMT")[0] %></td>
                     <td> <%= all_tekme_home[0][i].tim1 %></td>
-                    <td> <%= all_tekme_home[0][i].tim2 %></td>
+                    <td><%= all_tekme_home[0][i].tim1 %></td>
                     <td><%= all_tekme_home[0][i].kvota %></td>
-                    <td><%= all_tekme_home[0][i].game %></td>
                     <td onclick="more('<%= all_tekme_home[0][i]._id%>')">Read more...</td>
                   </tr>
                 
@@ -158,11 +153,11 @@ background-color: rgba(0, 255, 255, 0.315);
           <table cellpadding="0" cellspacing="0" border="0">
             <thead>
               <tr>
-                <th>Time</th>
+                <th>Time Played</th>
                 <th>Team1</th>
                 <th>Team2</th>
                 <th>Odd</th>
-                <th>type-game</th>
+                <!-- <th>type-game</th> -->
               </tr>
             </thead>
           </table>
@@ -184,12 +179,13 @@ background-color: rgba(0, 255, 255, 0.315);
                      }else{
                         proslo_class="notpass";
                      }
+                     
                         %>
                         <tr class="<%= proslo_class %>">
+                        <td> <%= all_tekme_home[1][i].removed_dateAdded.toString().split("GMT")[0] %></td>
                         <td> <%= all_tekme_home[1][i].removed_tim1 %></td>
-                        <td> <%= all_tekme_home[1][i].removed_tim2 %></td>
-                        <td><%= all_tekme_home[1][i].removed_game %></td>
-                        <td>+2.36%</td>
+                        <td><%= all_tekme_home[1][i].removed_tim2 %></td>
+                        <td><%= all_tekme_home[1][i].removed_kvota %></td>
                       </tr>
                     
                         <%     }} %>
