@@ -1,0 +1,61 @@
+html body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+    
+}
+body{
+    background-image: url("./img/audience-1866738_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    margin-left: 7% ;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+.team{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0%;
+    margin-left: 0%;
+    color: #4DD3FA;
+
+}
+.text{
+    margin-left: 1%;
+    
+
+}
+.data{
+    font-weight: bolder;   
+    color: #4DD3FA;
+
+
+}
+.desc{
+    margin: 0% 50% 0% 1%;
+    
+}
+@media screen and (max-width: 768px) {
+    .desc{
+        margin: 0% 50% 0% 1%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .desc{
+        margin: 0% 20% 0% 1%;
+    }
+}
+@media screen and (max-width: 428px) {
+    .desc{
+        margin: 0% 2% 0% 1%;
+    }
+    html body{
+    font-size: 14px;
+    }
+}

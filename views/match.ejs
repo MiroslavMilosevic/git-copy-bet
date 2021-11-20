@@ -1,0 +1,67 @@
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="match.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <span class=team><%= tekma.tim1 %></span>
+            <span> - </span>
+            <span class=team><%= tekma.tim2 %></span>
+            <br>
+            <br>
+            <span class="text">League: </span>
+            <span class="data"><%= tekma.liga %></span>
+            <br>
+            <span class="text">Start time: </span>
+            <span class="data"><%= tekma.dateToStart %></span>
+            <br>
+            <span class="text">Game: </span>
+            <span class="data"><%= tekma.game %></span>
+            <br>
+            <span class="text">Odd: </span>
+            <span class="data"><%= tekma.kvota %></span>
+            <br>
+            <span class="text">Unit: </span>
+            <span class="data"><%= tekma.stek %></span>
+            <br>
+            <br>
+            <p class="text">Description:</p>
+           
+            <%
+            
+            if(tekma.description !== undefined){
+            %>
+            <p class="desc"><%= tekma.description %></p>
+            
+            <%}else{ %>
+                
+                <p class="desc">There is no description for this match</p>
+
+                <% } %>
+            </div>
+    </body>
+    
+    </html>
+
+
+
+
+<!-- 
+<p><%= tekma._id %></p>
+<p></p>
+<p><%= tekma.tim2 %></p>
+<p></p>
+<p></p>
+<p><%= tekma.stek %></p>
+<p><%= tekma.game %></p>
+<p></p>
+<p><%= tekma.dateToEnd %></p> -->
