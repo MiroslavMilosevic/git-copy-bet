@@ -22,7 +22,7 @@
             <span class="data"><%= tekma.liga %></span>
             <br>
             <span class="text">Start time: </span>
-            <span class="data"><%= tekma.dateToStart %></span>
+            <span class="data"><%= tekma.dateToStart.toString().split("GMT")[0]%></span>
             <br>
             <span class="text">Game: </span>
             <span class="data"><%= tekma.game %></span>
