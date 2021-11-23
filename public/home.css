@@ -76,8 +76,15 @@ nav ul li a:hover {
     color: whitesmoke;
     font-family: 'Inconsolata', monospace;
     margin: 0 10%;
-    display: flex;
-    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 500px;
+    background-color: #000000a8;
+    border-radius: 20px;
+    
+}
+.a-link-link{
+    color: #4DD3FA !important;
+    text-decoration: none !important;
 }
 
 .about-text h1 {
@@ -106,6 +113,9 @@ nav ul li a:hover {
     background-position: center;
     border-bottom: 2px #4DD3FA;
     border-bottom-style: outset;
+    background-image: url("./img/audience-1866738_1920.jpg");
+        background-color: #000000a8;
+        
     
 }
 .profit{
@@ -188,10 +198,10 @@ hr{display:none}
 /* /////////////////////////////////////////////////////////////// */
 
 .pass{
-    background-color: green;
+    background-color: #1ccb1c6b;
 }
 .notpass{
-    background-color: red;
+    background-color: #ff000085;
 }
 h1{
     font-size: 30px;
@@ -250,6 +260,9 @@ table tr:hover td {
     margin:0px 2px;
     /* margin-top: 10%; */
     padding-top: 5%;
+    background-color: #000000a8;
+    height:100%;
+
   }
   
   
