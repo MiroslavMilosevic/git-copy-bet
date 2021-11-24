@@ -109,6 +109,14 @@ nav ul li a:hover {
     font-size: 1.6rem;
     font-weight: normal;
 } */
+.read-more{
+cursor: pointer;
+transition:all 0.25s;
+}
+.read-more:hover{
+    color:#4DD3FA ;
+    font-weight: bold;
+    }
 
 .matches {
     height: 100vh;
