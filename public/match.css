@@ -53,6 +53,8 @@ body{
     border-radius: 20px;
     /* max-height: 80vh; */
     padding: 3% 3%;
+    word-break: break-word;
+
     
 }
 @media screen and (max-width: 768px) {
