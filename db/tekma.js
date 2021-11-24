@@ -28,7 +28,7 @@ sport:{
     required:true
 },
 stek:{
-    type:Number,
+    type:String,
     required:false
 },
 description:{
