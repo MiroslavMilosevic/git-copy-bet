@@ -48,10 +48,10 @@ body{
 }
 .desc{
     margin: 0% 50% 0% 1%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     background-color: #000000a8;
     border-radius: 20px;
-    max-height: 80vh;
+    /* max-height: 80vh; */
     padding: 3% 3%;
     
 }
