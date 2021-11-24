@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+
+}
+body{
+    text-align: center;
+        background-image: url("./img/audience-1866738_1920.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100vh;
+        
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2rem;
+    color: #4DD3FA;
+    padding: 5% 20% 3% 20%;
+
+}
+.desc{
+    overflow-y: scroll;
+    background-color: #000000a8;
+    border-radius: 20px;
+    max-height: 80vh;
+    margin-left: 10%;
+    margin-right: 10% ;
+    padding: 3% 3%;
+}
+p{
+
+   
+
+}

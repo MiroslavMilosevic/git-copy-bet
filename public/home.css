@@ -77,14 +77,16 @@ nav ul li a:hover {
     font-family: 'Inconsolata', monospace;
     margin: 0 10%;
     overflow-y: scroll;
-    max-height: 500px;
+    max-height: 80vh;
     background-color: #000000a8;
     border-radius: 20px;
-    
+    padding: 5% 5%;
 }
+
 .a-link-link{
     color: #4DD3FA !important;
     text-decoration: none !important;
+    cursor: pointer;
 }
 
 .about-text h1 {
@@ -107,7 +109,7 @@ nav ul li a:hover {
 
 .matches {
     height: 100vh;
-    background-image: url("./img/wood-g1c91bb581_1920.jpg");
+    /* background-image: url("./img/wood-g1c91bb581_1920.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -119,18 +121,29 @@ nav ul li a:hover {
     
 }
 .profit{
-    height: 100vh;
-    background-image: url("./img/darts-g6b66f11d2_1920.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("./img/audience-1866738_1920.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter:blur(3px); */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-bottom: 2px #4DD3FA;
     border-bottom-style: outset;
     
 }
 @media screen and (min-width: 768px) {
 hr{display:none}
+
+
 }
+@media screen and (max-width: 450px) {
+   html{
+       font-size: 0.8rem;
+   }
+    }
 @media screen and (max-width: 768px) {
    
     nav {
@@ -204,7 +217,7 @@ hr{display:none}
     background-color: #ff000085;
 }
 h1{
-    font-size: 30px;
+    font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
@@ -229,7 +242,7 @@ h1{
     padding: 20px 15px;
     text-align: left;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.8rem;
     color: #fff;
     text-transform: uppercase;
   }
@@ -238,10 +251,11 @@ h1{
     text-align: left;
     vertical-align:middle;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 0.9rem;
     color: #fff;
     border-bottom: solid 1px rgba(255,255,255,0.1);
-  }
+  }    
+
 tr:hover {background-color: rgba(255,255,255,0.3);}
 
 table tr:hover td {
